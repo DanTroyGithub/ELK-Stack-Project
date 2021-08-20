@@ -29,7 +29,7 @@ monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly ___EFFECTIVE___, 
 in addition to restricting __ACCESS__ to the network.
 
--What aspect of security do load balancers protect? THYE PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION.
+What aspect of security do load balancers protect? THYE PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION.
 What is the advantage of a jump box?_ THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC.
 Integrating an ELK server allows users to easily monitor the vulnerable 
 VMs for changes to the __CONFIGURATION FILES___ and system __FILES___.
@@ -60,7 +60,9 @@ Machines within the network can only be accessed by __Jump-Box-Provisioner__.
 Which machine did you allow to access your ELK VM? My personal 
 computer
 What was its IP address?___101.118.86.232
+
 A summary of the access policies in place can be found in the table below.
+
 | Name | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump-Box-Provisioner | Yes | 10.0.0.1 10.0.0.2 |
