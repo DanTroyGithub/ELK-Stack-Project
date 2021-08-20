@@ -13,7 +13,7 @@ Azure. They can be used to either recreate the entire deployment pictured
 above. Alternatively, select portions of the **_YAML_** file may be used to
 install only certain pieces of it, such as Filebeat.
 
- - Install-ELK-playbook.yml
+ - **_Install-ELK-playbook.yml_**
 
 This document contains the following details:
 - Description of the Topology
@@ -26,13 +26,13 @@ This document contains the following details:
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and 
 monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly ___EFFECTIVE___, 
-in addition to restricting __ACCESS__ to the network.
+Load balancing ensures that the application will be highly **_EFFECTIVE_**, 
+in addition to restricting **_ACCESS_** to the network.
 
-What aspect of security do load balancers protect? THYE PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION.
-What is the advantage of a jump box?_ THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC.
+What aspect of security do load balancers protect? **_THEY PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION._**
+What is the advantage of a jump box? **_THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC._**
 Integrating an ELK server allows users to easily monitor the vulnerable 
-VMs for changes to the __CONFIGURATION FILES___ and system __FILES___.
+VMs for changes to the **_CONFIGURATION FILES_** and system **_FILES._**
 
 What does Filebeat watch for? THEY WATCH FOR LOG FILES OR LOG EVENTS.
 What does Metricbeat record? THEY RECORD METRICS FROM ON GOING SERVICES ON THE SERVER.
