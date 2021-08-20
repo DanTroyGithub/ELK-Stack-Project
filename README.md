@@ -29,8 +29,12 @@ monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly **_EFFECTIVE_**, 
 in addition to restricting **_ACCESS_** to the network.
 
-What aspect of security do load balancers protect? **_THEY PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION._**
-What is the advantage of a jump box? **_THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC._**
+What aspect of security do load balancers protect? 
+**_THEY PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION._**
+
+What is the advantage of a jump box? 
+**_THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC._**
+
 Integrating an ELK server allows users to easily monitor the vulnerable 
 VMs for changes to the **_CONFIGURATION FILES_** and system **_FILES._**
 
