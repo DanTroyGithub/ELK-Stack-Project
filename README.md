@@ -70,8 +70,8 @@ A summary of the access policies in place can be found in the table below.
 
 | Name | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump-Box-Provisioner | Yes | 10.0.0.1 10.0.0.2 |
-| Web-1 | No | 172.56.11.249 | 
-| Web-2 | No | 172.56.11.249 | 
-| Web-3 | No | ,, ,, ,, ,, | 
-| ELK-Server | Yes(http) | ,, ,, ,, ,, | 
+| Jump-Box-Provisioner | Yes (SSH) | 101.118.86.232 |
+| Web-1 | No | 101.118.86.232 | 
+| Web-2 | No | 101.118.86.232 | 
+| Web-3 | No | 101.118.86.232 | 
+| ELK-Server | Yes (http) | 101.118.86.232 | 
