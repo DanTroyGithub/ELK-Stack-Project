@@ -56,10 +56,11 @@ Only the ___Jump-Box-Provisioner____ machine can accept connections from the
 Internet. Access to this machine is only allowed from the following IP 
 addresses:
 - 101.118.86.232
+
 Machines within the network can only be accessed by __Jump-Box-Provisioner__.
 Which machine did you allow to access your ELK VM? My personal 
 computer
-What was its IP address?___101.118.86.232
+What was its IP address?___101.118.86.232___
 
 A summary of the access policies in place can be found in the table below.
 
