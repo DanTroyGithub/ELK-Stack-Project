@@ -13,7 +13,7 @@ Azure. They can be used to either recreate the entire deployment pictured
 above. Alternatively, select portions of the **_YAML_** file may be used to
 install only certain pieces of it, such as Filebeat.
 
-![A link](Ansible/install-elk.yml)
+![install-elk.yml](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
