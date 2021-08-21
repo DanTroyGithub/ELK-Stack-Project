@@ -30,16 +30,20 @@ Load balancing ensures that the application will be highly **_EFFECTIVE_**,
 in addition to restricting **_ACCESS_** to the network.
 
 What aspect of security do load balancers protect? 
-**_THEY PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION._**
+- **_THEY PREVENT UNWANTED OR UNAUTHORIZED TRAFFIC FROM REACHING THE APPLICATION._**
 
 What is the advantage of a jump box? 
-**_THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC._**
+- **_THEY ADD A SECURITY LAYER TOT HE WEB SERVERS PREVENTING THEM FROM BEING EXPOSED TO THE PUBLIC._**
 
 Integrating an ELK server allows users to easily monitor the vulnerable 
 VMs for changes to the **_CONFIGURATION FILES_** and system **_FILES._**
 
-What does Filebeat watch for? THEY WATCH FOR LOG FILES OR LOG EVENTS.
-What does Metricbeat record? THEY RECORD METRICS FROM ON GOING SERVICES ON THE SERVER.
+What does Filebeat watch for? 
+- **_THEY WATCH FOR LOG FILES OR LOG EVENTS._**
+
+What does Metricbeat record? 
+- **_THEY RECORD METRICS FROM ON GOING SERVICES ON THE SERVER._**
+
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator
 
@@ -56,15 +60,15 @@ the table_.
 ### Access Policies
 The machines on the internal network are not exposed to the public 
 Internet. 
-Only the ___Jump-Box-Provisioner____ machine can accept connections from the
+Only the **_Jump-Box-Provisioner-** machine can accept connections from the
 Internet. Access to this machine is only allowed from the following IP 
 addresses:
-- 101.118.86.232
+- **_101.118.86.232_**
 
-Machines within the network can only be accessed by __Jump-Box-Provisioner__.
-Which machine did you allow to access your ELK VM? My personal 
-computer
-What was its IP address?___101.118.86.232___
+Machines within the network can only be accessed by **_Jump-Box-Provisioner._**
+Which machine did you allow to access your ELK VM? **_My personal 
+computer_**
+What was its IP address? **_101.118.86.232_**
 
 A summary of the access policies in place can be found in the table below.
 
@@ -79,35 +83,60 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration 
 Ansible was used to automate configuration of the ELK machine. No 
 configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with 
-Ansible?_ It is flexible because it allows changes to be made within any 
-of the VMs associated with it.
+
+- What is the main advantage of automating configuration with 
+Ansible?
+- **_It is flexible because it allows changes to be made within any 
+of the VMs associated with it._**
+
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. .
-1) Install Docker.io 2)Install python3-pip 3)Install Docker Python Module 
-4) Download and launch a Docker web container 5)Download and launch a 
-docker web container.
-- ...
+- In 3-5 bullets, explain the steps of the ELK installation play. .
+- 1) **_Install Docker.io_** 
+- 2) **_Install python3-pip_** 
+- 3) **_Install Docker Python Module_** 
+- 4) **_Download and launch a Docker web container_**
+
 The following screenshot displays the result of running `docker ps` after 
 successfully configuring the ELK instance.
+
 ![TODO: Update the path with the name of your screenshot of docker ps 
-output](Images/docker_ps.png)
+output](Images/ansible-3.JPG)
+
+
 ### Target Machines & Beats
+
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-10.0.0.1 10.0.0.11 10.0.0.12 10.0.0.13 10.0.0.4 
+
+-List the IP addresses of the machines you are monitoring_
+
+- **_10.1.0.5_** 
+- **_10.1.0.6_** 
+- **_10.1.0.7_**
+
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
-Filebeat and Metricbeat
+-Specify which Beats you successfully installed_
+- **_Filebeat and Metricbeat_**
+
+![TODO: Update the path with the name of your screenshot of docker ps 
+output](Images/Filebeat.JPG)
+
+![TODO: Update the path with the name of your screenshot of docker ps 
+output](Images/Metricbeat.JPG)
+
+
 These Beats allow us to collect the following information from each 
 machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, 
+-In 1-2 sentences, explain what kind of data each beat collects, 
 and provide 1 example of what you expect to see. E.g., `Winlogbeat` 
 collects Windows logs, which we use to track user logon events, etc._
-Filebeat monitors log files and log events. Example: Inputs and 
-harvesters. While Metricbeat looks out for any information in the file 
-system which has been manipulated.
+
+- **_Filebeat monitors log files and log events. Example: Inputs and 
+harvesters._** 
+- **_Metricbeat looks out for any information in the file 
+system which has been manipulated._**
+
 ### Using the Playbook
+
 In order to use the playbook, you will need to have an Ansible control 
 node already configured. Assuming you have such a control node 
 provisioned: 
