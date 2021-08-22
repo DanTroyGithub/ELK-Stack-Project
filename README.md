@@ -142,9 +142,14 @@ node already configured. Assuming you have such a control node
 provisioned: 
 SSH into the control node and follow the steps below:
 
+- From your Ansible container, add the new VM to Ansible's hosts file.
 - Copy the ![Ansible Configuration File](Ansible/ansible.cfg) to **_/etc/ansible_**
-- Update the ![Hosts File](Ansible/hosts) file to include... ![Hosts File](Images/Hosts.JPG)
-- Run the playbook, and navigate to _Jumpbox___ to check that the 
+- Update the ![Hosts File](Ansible/hosts) file to include... 
+- ![Hosts File](Images/Hosts.JPG)
+- Run the playbook, ![Install-Elk.yml](Ansible/install-elk.yml)
+- Navigate back to **_Jump-Box-Provisioner_** to check that the installation worked as expected.
+- Navigate to  **_http://[your.ELK-VM.External.IP]:5601/app/kibana_** to see if webpage below loads.
+- ![Kabana](Images/Kabana.JPG)
 
 
 installation worked as expected.
