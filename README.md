@@ -63,22 +63,22 @@ Internet.
 Only the **_Jump-Box-Provisioner-** machine can accept connections from the
 Internet. Access to this machine is only allowed from the following IP 
 addresses:
-- **_101.118.86.232_**
+- **_111.111.86.222_**
 
 Machines within the network can only be accessed by **_Jump-Box-Provisioner._**
 Which machine did you allow to access your ELK VM? **_My personal 
 computer_**
-What was its IP address? **_101.118.86.232_**
+What was its IP address? **_111.111.86.222_**
 
 A summary of the access policies in place can be found in the table below.
 
 | Name | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump-Box-Provisioner | Yes (SSH) | 101.118.86.232 |
-| Web-1 | No | 101.118.86.232 | 
-| Web-2 | No | 101.118.86.232 | 
-| Web-3 | No | 101.118.86.232 | 
-| ELK-Server | Yes (http) | 101.118.86.232 | 
+| Jump-Box-Provisioner | Yes (SSH) | 111.111.86.222 |
+| Web-1 | No | 111.111.86.222 | 
+| Web-2 | No | 111.111.86.222 | 
+| Web-3 | No | 111.111.86.222 | 
+| ELK-Server | Yes (http) | 111.111.86.222 | 
 
 ### Elk Configuration 
 Ansible was used to automate configuration of the ELK machine. No 
@@ -141,9 +141,12 @@ In order to use the playbook, you will need to have an Ansible control
 node already configured. Assuming you have such a control node 
 provisioned: 
 SSH into the control node and follow the steps below:
-- Copy the _ansible configuration____ file to __run playbooks___.
-- Update the _ansible host____ file to include...
+
+- Copy the ![Ansible Configuration File](Ansible/ansible.cfg) to **_/etc/ansible_**
+- Update the ![Hosts File](Ansible/hosts) file to include... ![Hosts File](Images/Hosts.JPG)
 - Run the playbook, and navigate to _Jumpbox___ to check that the 
+
+
 installation worked as expected.
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? The elk-playbook.yml
