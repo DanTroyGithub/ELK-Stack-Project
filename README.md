@@ -145,24 +145,23 @@ SSH into the control node and follow the steps below:
 - From your Ansible container, add the new VM to Ansible's hosts file.
 - Copy the ![Ansible Configuration File](Ansible/ansible.cfg) to **_/etc/ansible_**
 - Update the ![Hosts File](Ansible/hosts) file to include... 
-- ![Hosts File](Images/Hosts.JPG)
+![Hosts File](Images/Hosts.JPG)
 - Run the playbook, ![Install-Elk.yml](Ansible/install-elk.yml)
 - Navigate back to **_Jump-Box-Provisioner_** to check that the installation worked as expected.
 - Navigate to  **_http://[your.ELK-VM.External.IP]:5601/app/kibana_** to see if webpage below loads.
-- ![Kabana](Images/Kabana.JPG)
+![Kabana](Images/Kabana.JPG)
 
 
-installation worked as expected.
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? The elk-playbook.yml
- Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific
-machine? elk-playbook.yml file
- How do I specify which machine to install the ELK server on versus which 
-to install Filebeat on?_ By using the IPs of the respective servers.
-- _Which URL do you navigate to in order to check that the ELK server is 
-running?
-http://[ElkProject1VM-ip]:5601/app/kibana
-_As a **Bonus**, provide the specific commands the user will need to run 
-to download the playbook, update the files, etc._
-ansible-playbook elk-playbook.yml
+- Answer the following questions to fill in the blanks:_
+- Which file is the playbook? 
+- **_The Install-elk.yml_**
+- Where do you copy it?
+- **_Copy to /etc/ansible_**
+- Which file do you update to make Ansible run the playbook on a specific machine? 
+- **_Update the hosts.yml file_**
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+- **_By using the IPs of the respective servers_**
+- Which URL do you navigate to in order to check that the ELK server is running?
+- **_http://[ElkProject1VM-ip]:5601/app/kibana_**
+- As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+  - **_ansible-playbook install-elk.yml_**
